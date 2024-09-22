@@ -1,0 +1,164 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 60px; /* Tambahkan padding untuk mencegah konten tertutup navbar */
+}
+
+header {
+    color: white;
+    padding: 30px 0;
+    background-color: black;
+    position: fixed; /* Navbar akan tetap di posisi atas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Menjaga navbar di atas elemen lain */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan */
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 40px;
+    font-family: "Oswald", sans-serif;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav ul li a.active {
+    color: red; /* Ubah warna teks saat aktif */
+}
+
+section {
+    color: black;
+    margin: 50px 0;
+    padding: 20px 0; /* Menambah sedikit padding untuk ruang di dalam section */
+    border-top: 2px solid black; /* Garis di bagian atas */
+}
+
+
+.manga h1, .anime h1, .movie h1, .game h1, .song h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.konteks1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px; /* Menambahkan jarak antar elemen */
+}
+
+.konteks2 {
+    flex: 1 1 calc(33.33% - 20px); /* Setiap item mengambil 1/3 lebar dan menyesuaikan dengan jarak */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.konteks2 img {
+    width: 100%;
+    height: 600px; /* Membuat gambar lebih responsif */
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.konteks2 h4 {
+    text-align: center;
+}
+
+.teks1, .teks2, .teks3 {
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.teks1 {
+    background-color: crimson;
+}
+
+.teks2 {
+    background-color: rgb(0, 17, 255);
+}
+
+.teks3 {
+    background-color: rgb(220, 117, 20);
+}
+
+/* Media Query untuk menyesuaikan layout di layar yang lebih kecil */
+@media (max-width: 768px) {
+
+    
+
+    section {
+        color: black;
+        margin: 15px 0;
+        border-top: 2px solid black; /* Garis di bagian atas */
+    }
+
+    .konteks2 {
+        flex: 1 1 100%; /* Elemen penuh di layar kecil */
+    }
+
+    nav {
+        display: flex; /* Tetap menggunakan flex */
+        flex-direction: row; /* Pastikan arah flex tetap horizontal */
+        justify-content: center; /* Rata tengah secara horizontal */
+        flex-wrap: wrap; /* Jika ada terlalu banyak item, pindahkan ke baris baru */
+    }
+
+    nav ul {
+        display: flex; /* Buat ul menggunakan flex juga */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px; /* Jarak antar item */
+        margin-left: 13px;
+    }
+}
+
+footer {
+    color: white;
+    padding: 5px 0;
+    background-color: black;
+}
+
+footer h4 {
+    font-size: 20px;
+    text-align: center;
+}
