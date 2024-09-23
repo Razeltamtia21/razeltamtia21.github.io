@@ -69,10 +69,22 @@ section {
     border-top: 2px solid black;
 }
 
+.manga {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+}
+
 
 .manga h1, .anime h1, .movie h1, .game h1, .song h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
 }
 
 .konteks1 {
@@ -95,6 +107,7 @@ section {
     height: 600px;
     object-fit: cover;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
 }
 
 .konteks2 h4 {
@@ -146,7 +159,7 @@ section {
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 0 12px;
     }
 
     .konteks2 img {
